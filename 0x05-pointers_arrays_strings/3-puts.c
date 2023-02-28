@@ -2,19 +2,15 @@
 
 /**
  * _puts - prints a string
- * @str: string to be printed
- * Return: length of the string
+ * @str: the string
  */
 void _puts(char *str)
 {
-int i = 0;
+	while (*str != '\0')
+	{
+		_putchar(*(str++));
+	}
 	
-while (*(str + i))
-{
-_putchar(*(str + i));
-i++;
+	_putchar('\n');
 }
-_putchar('\n');
-}
-
 
